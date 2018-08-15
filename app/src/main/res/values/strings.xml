@@ -1,0 +1,27 @@
+<resources>
+
+    <!--全局-->
+    <string name="app_name">Syllabus</string>
+
+    <!--登录模块-->
+    <string name="login_student_id">学号</string>
+    <string name="login_password">密码</string>
+    <string name="login_login">Login</string>
+    <string name="login_big_forward">TOPVIEW SYLLABUS</string>
+    <string name="login_small_forward">MANAGE YOUR ITINERARY</string>
+
+    <!--welcome模块-->
+    <string name="welcome_title">TOPVIEW\nSYLLABUS</string>
+
+    <!--syllabus模块-->
+    <string name="syllabus_select_team">select_team</string>
+    <string name="syllabus_login_out">login_out</string>
+    <string name="syllabus_toolbar_title">syllabus</string>
+
+    <!--TimeTableDialog-->
+    <string name="dialog_name">课程名称</string>
+    <string name="dialog_teacher">授课老师</string>
+    <string name="dialog_clazz">教学班级</string>
+    <string name="dialog_where">上课地点</string>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dalog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="30dp"
+            android:src="@drawable/dalog_name_icon"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <TextView
+            android:paddingStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|start"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:text="@string/dialog_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/dalog_tv_name"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="30dp"
+            android:src="@drawable/dalog_where_icon"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <TextView
+            android:paddingStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:text="@string/dialog_where"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/dalog_tv_where"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="30dp"
+            android:src="@drawable/dalog_teacher_icon"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <TextView
+            android:paddingStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="2"
+            android:gravity="start|center"
+            android:text="@string/dialog_teacher"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/dalog_tv_teacher"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingStart="30dp"
+            android:src="@drawable/dalog_clazz_icon"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="2"
+            android:paddingStart="5dp"
+            android:gravity="center|start"
+            android:text="@string/dialog_clazz"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/dalog_tv_clazz"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dalog_iv_close"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/dalog_close_icon"
+        tools:ignore="ContentDescription" />
+
+
+</LinearLayout>

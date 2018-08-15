@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/syllabus_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/syllabus_tb_top"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@android:color/transparent"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/syllabus_toolbar_title"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/syllabus_tv_week"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="end"
+                android:text="01"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/syllabus_ib_bg"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/syllabus_ib_select_week"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:paddingStart="7dp"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/syllabus_ib_select_team"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginEnd="6dp"
+                android:layout_height="25dp" />
+
+            <ImageButton
+                android:id="@+id/syllabus_ib_login_out"
+                android:layout_width="40dp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/syllabus_ib_login_out"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.hebaiyi.www.syllabus.syllabus.widget.TimeTableView
+        android:id="@+id/syllabus_time_table_view_syllabus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

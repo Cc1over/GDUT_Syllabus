@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".login.view.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_tb_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_below="@+id/login_tb_top"
+        android:layout_width="match_parent"
+        android:id="@+id/login_ll_forward"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/login_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_big_forward"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_small_forward"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/login_ll_forward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <include
+            android:id="@+id/login_include_input"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            layout="@layout/layout_login_input"/>
+
+        <include
+            android:id="@+id/login_include_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:visibility="gone"
+            layout="@layout/layout_login_progress" />
+
+        <TextView
+            android:id="@+id/login_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_include_input"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_btn_bg"
+            android:paddingBottom="2dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="2dp"
+            android:text="@string/login_login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

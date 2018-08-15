@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/syllabus_menu_login_out"
+        app:showAsAction="never"
+        android:title="@string/syllabus_login_out" />
+
+    <item
+        android:id="@+id/syllabus_menu_select"
+        app:showAsAction="never"
+        android:title="@string/syllabus_select_team"/>
+
+</menu>
